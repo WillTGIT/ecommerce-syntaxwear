@@ -1,18 +1,23 @@
 /* header.css */
 .header{
     position: fixed;
-    top: 20px;
+    top: 60px;
     left: 50%;
     transform: translate(-50%);
-    width: calc(100% - 40px);
+    width: calc(100% - 210px);
     border-radius: 15px;
     z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.225rem 1.25rem;
+    padding: 0.225rem 1.15rem;
     background-color: #ffffff;
+
+    
+  max-width: 1280px;
+  margin: 0 auto;
 }
+
 
 .logo img{
    height: 48px;
