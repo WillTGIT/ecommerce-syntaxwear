@@ -76,3 +76,40 @@ border-radius: 20px;
     display: flex;
     gap: 10px;
 }
+
+@media (max-width: 768px) {
+  .grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 🔹 Uma coluna apenas */
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "highlight highlight"
+      "sneaker-white sneaker-white"
+      "model sneaker-color"
+      "model sneaker-silver"
+      "sneaker-purple sneaker-purple";
+      max-width: 100%;
+      gap: 0.625rem;
+    
+  }
+
+  .highlight{
+    min-height: 500px;
+  }
+
+  .model{
+    min-height: 370px;
+  }
+
+  .sneaker-white, .sneaker-silver{
+    min-width: 190px;
+  }
+
+  .sneaker-purple{
+    min-height: 190px;
+  }
+
+  
+  
+
+}
